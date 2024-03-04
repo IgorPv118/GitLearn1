@@ -37,10 +37,19 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
+@Composable
+fun SayHelloWorld(modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello World!",
+        modifier = modifier
+    )
+}
 
+@Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     GitLearn1Theme {
-        Greeting("Android")
+        SayHelloWorld()
     }
 }
+
